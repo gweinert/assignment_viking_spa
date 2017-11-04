@@ -1,0 +1,22 @@
+<div class="product card text-center">
+	<a ui-sref="products.detail({ id: product.id })">
+		<div class="card-header bg-dark">
+			<h4 class="text-light">{{ product.name }}</h4>
+		</div>
+		<img class="card-img-top" ng-src="{{ product.image }}">
+		<div class="card-body">
+			<span class="price">
+				{{ product.price }}
+			</span>
+		</div>
+	</a>
+	<div class="card-footer">
+		<button
+			type="button"
+			class="btn btn-primary"
+			ng-click="onAddToCartClick(product)"
+		>
+			Add to Cart
+		</button>
+	</div>
+</div>

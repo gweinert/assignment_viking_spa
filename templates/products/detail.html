@@ -1,0 +1,24 @@
+<div class="product-detail container">
+	<img ng-src="{{ product.image }}">
+	<div class="row">
+		<div class="col">
+			<h1>{{ product.name }}</h1>
+			<h3>{{ product.price}}</h3>
+			<p>{{ product.description }}</p>
+			<button
+				type="button"
+				class="btn btn-primary"
+				ng-click="handleAddToCartClick(product)"
+			>
+				Add to Cart
+			</button>
+		</div>
+	</div>
+</div>
+
+<style>
+	.product-detail img {
+		width: 100%;
+		max-width: 500px;
+	}
+</style>

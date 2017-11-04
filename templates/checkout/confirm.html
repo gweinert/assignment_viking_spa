@@ -1,0 +1,11 @@
+<h3>Confirm</h3>
+
+<div class="confirm-items">
+	<div class="item" ng-repeat="item in cartItems">
+		<span>{{ item.item.name }}</span>
+		<span>{{ item.item.price }}</span>
+		<span>Quantity: {{ item.quantity }}</span>
+	</div>
+</div>
+
+<button type="button" class="btn btn-primary">Order</button>

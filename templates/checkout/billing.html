@@ -1,0 +1,25 @@
+<label for="billing_fname">First Name</label>
+<input type="text" name="billing_fname" ng-model="formData.billing_fname" required>
+
+<label for="billing_lname">Last Name</label>
+<input type="text" name="billing_lname" ng-model="formData.billing_lname" required>
+
+<label for="email">Email</label>
+<input type="text" name="email" ng-model="formData.email" required>
+
+<label for="billing_address">Address</label>
+<input type="text" name="billing_address" ng-model="formData.billing_address" required>
+
+<label for="billing_city">City</label>
+<input type="text" name="billing_city" ng-model="formData.billing_city" required>
+
+<label for="billing_zip">Zip</label>
+<input type="text" name="billing_zip" ng-model="formData.billing_zip" required>
+
+<a
+	ui-sref="checkout.payment"
+	class="btn btn-success"
+	ng-if="checkoutForm.$valid" 
+>
+	Continue to Payment
+</a>

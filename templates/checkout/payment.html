@@ -1,0 +1,19 @@
+<label for="cc">Credit Card Number</label>
+<input type="text" name="cc" ng-model="formData.cc" required>
+
+<label for="cvv">CVV</label>
+<input type="text" name="cvv" ng-model="formData.cvv" required>
+
+<label for="exp_date">Expiration Date</label>
+<input type="text" name="exp_date" ng-model="formData.exp_date" required>
+
+<label for="phone">Phone</label>
+<input type="text" name="phone" ng-model="formData.phone" required>
+
+<a
+	ui-sref="checkout.confirm"
+	class="btn btn-success"
+	ng-if="checkoutForm.$valid" 
+>
+	Continue to Confirm
+</a>

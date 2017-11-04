@@ -1,0 +1,28 @@
+<div class="cart container">
+	<h2>Your Cart</h2>
+
+	<div class="items">
+		<div
+			class="item"
+			ng-repeat="item in items"
+		>
+			<label for="quantity">Quantity</label>
+			<input
+				type="number"
+				min="1"
+				name="quantity"
+				ng-model="item.quantity"
+				ng-change="onQuantityChange(item)"
+			>
+			<p>{{ item.item.name }}</p>
+			<p>{{ item.item.price}} </p>
+		</div>
+	</div>
+
+	<button
+		type="button"
+		class="btn btn-primary"
+	>
+		<a ui-sref="checkout.shipping">Checkout</a>
+	</button>
+</div>
